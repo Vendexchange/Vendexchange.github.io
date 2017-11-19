@@ -226,11 +226,10 @@
 .tldate {
     display: block;
     width: 200px;
-    background: #ededed;
+    background: #ffffff;
     /*background: #1d0f48;*/
     /*border: 3px solid #212121;*/
     border: 3px solid #1d0f48;
-    /*color: #ededed;*/
     color: #1d0f48;
     margin: 0 auto;
     padding: 3px 0;
@@ -260,9 +259,7 @@
 .timeline li .timeline-panel {
     width: 46%;
     float: left;
-    /*background: #fff;*/
-    background: #1d0f48;
-    border: 1px solid #d4d4d4;
+    background: #fff;
     border: 1px solid #d4d4d4;
     padding: 20px;
     position: relative;
@@ -293,10 +290,8 @@
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    /*border-left: 14px solid #fff;*/
-    border-left: 14px solid #1d0f48;
-    /*border-right: 0 solid #fff;*/
-    border-right: 0 solid #1d0f48;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
     border-bottom: 14px solid transparent;
     content: " ";
 }
@@ -365,8 +360,7 @@
     margin: 0;
     /*color: #c25b4e;*/
     font-size: 17px;
-    /*color: #1d0f49;*/
-    color: #fff;
+    color: #1d0f49;
 }
 
 .tl-body p, .tl-body ul {
@@ -426,4 +420,30 @@
         left: -14px;
         right: auto;
     }
+}
+
+.hr.invisible_hr {
+    height: 0;
+    padding: 0;
+}
+.hr.big_size_hr {
+    margin: 30px 0;
+}
+.hr {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 24px;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 2px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.highlight_secondary {
+    color: #F24046;
+}
+.team-role {
+    color: #A4A7AA;
 }
