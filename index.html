@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-
     <!-- Styles -->
     <link href="assets/css/core.min.css" rel="stylesheet">
     <link href="assets/css/thesaas.min.css" rel="stylesheet">
@@ -19,7 +18,6 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/icon.png">
-
 </head>
 
 <body id="home">
@@ -51,6 +49,16 @@
 </nav>
 <!-- END Topbar -->
 
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="cognito">
+                <script src="https://services.cognitoforms.com/s/FNYfMawSF0-O6TN8-a89yg"></script>
+                <script>Cognito.load("forms", { id: "1" });</script>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Header -->
 <header class="header h-fullscreen vend-head">
@@ -59,18 +67,22 @@
 
         <div class="row h-full align-items-center text-center text-lg-left">
 
-            <div class="offset-1 col-5 col-lg-5 offset-lg-1 head-intro">
-                <h1>First and Biggest Cryptocurrency <br/> Exchange platform in Africa</h1>
+            <div class="offset-1 col-sm-12 col-lg-5 offset-lg-1 head-intro">
+                <a class="btn btn-secondary btn-sm ">PRE-SALE ICO</a>
+
+                <h1 class="hidden-lg-down">First and Biggest Cryptocurrency <br/> Exchange platform in Africa</h1>
+                <h3 class="hidden-lg-up text-light">First and Biggest Cryptocurrency <br/> Exchange platform in Africa</h3>
                 <br>
                 <p class="lead mx-auto">Secured Crypto Asset Deposits, Wide Range of FIAT Currencies Supported,
                     High-Performance Order Matching Engine</p>
                 <br>
-                <a class="btn btn-lg btn-banner-red" href="page-register.html">Join ICO</a>
+                <a class="btn btn-lg btn-banner-red" data-toggle="modal" data-target=".bd-example-modal-lg" href="">Join ICO</a>
                 <a class="btn btn-lg btn-banner-gradient" href="page-register.html">Whitepaper</a>
-
+                <a class="btn btn-info btn-sm ">View Demo</a>
             </div>
 
             <div class="col-6 col-lg-6 ">
+
                 <div class="banner-container hidden-sm-down">
                     <img class=" img-fluid img-banner" src="assets/img/trade_banner.png">
                 </div>
@@ -78,14 +90,12 @@
             <!-- <div class="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
               <img class="shadow-4 mt-80" src="assets/img/demo/slack/dashboard.jpg" alt="...">
             </div> -->
-
         </div>
 
         <div class="col-12 align-self-end text-center vend-scroll" style="z-index: 1">
             <a class="scroll-down-1 scroll-down-inverse" href="#section-features"
                data-scrollto="section-features"><span></span></a>
         </div>
-
     </div>
 </header>
 <!-- END Header -->
@@ -94,6 +104,59 @@
 <!-- Main container -->
 <main class="main-content">
 
+    <section class=" bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <hr>
+                    <h6>Current Phase</h6>
+                    <h2>Pre-Sale</h2>
+                    <hr>
+                </div>
+                <div class="col-sm">
+                    <hr>
+                    <h6>Hard cap</h6>
+                    <h2>65,000,000 </h2>
+                    <hr>
+                </div>
+                <div class="col-sm">
+                    <hr>
+                    <h6>Token sales start</h6>
+                    <h2>30 November</h2>
+                    <hr>
+                </div>
+                <div class="col-sm">
+                    <hr>
+                    <h6>Token Price</h6>
+                    <h2>500 VND = 1 ETH</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <h6>We accept currencies</h6>
+                    <h3>ETH | BTC |  NG</h3>
+                    <hr>
+                </div>
+                <div class="col-sm">
+                    <h6>We accept payments</h6>
+                    <h3>PayPal | VISA  </h3>
+                    <hr>
+                </div>
+                <div class="col-sm">
+                    <h6>Token sales start</h6>
+                    <h3>30 November</h3>
+                    <hr>
+                </div>
+                <div class="col-sm">
+                    <h6>Token Price</h6>
+                    <h3>500 VND = 1 ETH</h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
