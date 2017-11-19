@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f21c7c-d31f-4b37-9d43-41d625dfd490" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="545" column="41" lean-forward="false" selection-start-line="545" selection-start-column="41" selection-end-line="545" selection-end-column="41" />
+            <state relative-caret-position="314">
+              <caret line="992" column="0" lean-forward="true" selection-start-line="992" selection-start-column="0" selection-end-line="992" selection-end-column="0" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -116,17 +117,6 @@
             <path>
               <item name="Vendexchange.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vendexchange.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vendexchange.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vendexchange.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vendexchange.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vendexchange.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,12 +254,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511100194321</updated>
-      <workItem from="1511100195553" duration="7276000" />
+      <workItem from="1511100195553" duration="7351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7276000" />
+    <option name="totallyTimeSpent" value="7351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="6" />
@@ -328,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="545" column="41" lean-forward="false" selection-start-line="545" selection-start-column="41" selection-end-line="545" selection-end-column="41" />
+        <state relative-caret-position="314">
+          <caret line="992" column="0" lean-forward="true" selection-start-line="992" selection-start-column="0" selection-end-line="992" selection-end-column="0" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
