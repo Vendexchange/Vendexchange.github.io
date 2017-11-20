@@ -450,3 +450,26 @@
 .team-role {
     color: #A4A7AA;
 }
+
+.cognito .c-button-section {
+    padding: 0 0 20px 0;
+    margin-bottom: -3.5%;
+}
+
+.ICO_section{
+    background-color: #1e0f49;
+    color: #989898;
+}
+
+/*.ICO_section h1 h2 h3 h4 h6 {*/
+    /*color: white;*/
+
+/*}*/
+
+.ICO_section h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Dosis", "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #989898;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
