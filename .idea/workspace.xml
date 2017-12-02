@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f21c7c-d31f-4b37-9d43-41d625dfd490" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trade.html" afterPath="$PROJECT_DIR$/trade.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="trade.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trade.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="498" column="35" lean-forward="true" selection-start-line="498" selection-start-column="35" selection-end-line="498" selection-end-column="35" />
+            <state relative-caret-position="182">
+              <caret line="501" column="25" lean-forward="true" selection-start-line="501" selection-start-column="25" selection-end-line="501" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -289,12 +287,12 @@
       <workItem from="1512151987640" duration="891000" />
       <workItem from="1512189768151" duration="1041000" />
       <workItem from="1512221074858" duration="738000" />
-      <workItem from="1512234520724" duration="1212000" />
+      <workItem from="1512234520724" duration="1231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24275000" />
+    <option name="totallyTimeSpent" value="24294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1398" height="797" extended-state="0" />
@@ -687,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trade.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="498" column="35" lean-forward="true" selection-start-line="498" selection-start-column="35" selection-end-line="498" selection-end-column="35" />
+        <state relative-caret-position="182">
+          <caret line="501" column="25" lean-forward="true" selection-start-line="501" selection-start-column="25" selection-end-line="501" selection-end-column="25" />
           <folding />
         </state>
       </provider>
