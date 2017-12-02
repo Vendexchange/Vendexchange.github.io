@@ -1,0 +1,285 @@
+
+.sidebar, .main-panel {
+	overflow: auto;
+	max-height: 100%;
+	height: 100%;
+	background-color: #171036;
+}
+
+.card {
+	border-radius: 6px;
+	box-shadow: 0 1px 1px rgba(204, 197, 185, 0.5);
+	background-color: #1f1648;
+	color: #feffff;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-bottom: none;
+}
+
+.navbar-default .navbar-nav > li > a:not(.btn) {
+	color: #ffffff;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #555;
+	cursor: default;
+	background-color: transparent;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+}
+
+.sidebar .nav li.active > a:before, .off-canvas-sidebar .nav li.active > a:before {
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+.sidebar .nav li.active > a:after, .off-canvas-sidebar .nav li.active > a:after {
+	border-right: none;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: -1px;
+	top: 8px;
+}
+
+strong {
+	color: inherit;
+}
+
+.card .content .content-chart {
+	padding: 0;
+}
+
+.content .content-chart{
+	padding: 0px;
+}
+
+.card .stats {
+	color: #a9a9a9;
+	font-weight: 300;
+	margin-left: 20px;
+}
+
+#candleChart {
+	height: 400px;
+	margin-top: 0px
+}
+
+
+#orderBookChartDiv {
+	width: 100%;
+	height: 400px;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+#activityChartdiv {
+	width: 100%;
+	height: 350px;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+
+.chartTabs{
+	margin-top: 20px;
+}
+
+nav {
+	padding: 0px 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.card .title {
+	margin: 0;
+	color: #feffff;
+	font-weight: 500;
+}
+
+
+.table-striped tbody > tr:nth-of-type(2n+1) {
+	background-color: transparent;
+}
+
+.table-striped tbody > tr:nth-of-type(2n) {
+	/*background-color: #FFFCF5;*/
+	background-color: #011121;
+}
+
+.ciq-night .ciq-nav {
+	border: none;
+	/*background: #151f28;*/
+	/*color: white;*/
+	border-radius: 6px;
+	padding-top: 0.8%;
+	padding-left: 0.8%;
+	padding-right: 0.8%;
+	box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+	background-color: #FFFFFF;
+	color: #252422;
+}
+
+.ciq-nav button, button:active, button:focus {
+	background-color: black;
+	vertical-align: middle;
+	cursor: pointer;
+	border: solid 1px black;
+	outline: none;
+}
+
+.main-panel > .content {
+	padding: 0px 15px;
+	min-height: calc(100% - 123px);
+}
+
+.chart_title {
+	/*color: #66615B;*/
+	color: #feffff;
+	line-height: 1.42857;
+	margin: 15px 0px;
+	padding: 10px 15px;
+}
+
+.title_top{
+
+}
+
+a[title="JavaScript charts"] {
+	display: none;
+	/*background-color: yellow;*/
+}
+
+
+[animate-on-change] {
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+[animate-on-change].changed {
+	background-color: red;
+	transition: none;
+	-webkit-transition: none;
+}
+
+
+.sidebar-wrapper{
+	background-color: #1d0f48;
+}
+
+.sidebar .sidebar-wrapper {
+	position: relative;
+	max-height: none;
+	min-height: 100%;
+	overflow: hidden;
+	width: 260px;
+	z-index: 4;
+	/*box-shadow: inset -1px 0px 0px 0px #DDDDDD;*/
+	box-shadow: none;
+}
+.ciq-night .chartContainer {
+	background: #0e0a1c;
+	color: #fff;
+}
+
+
+.top-panel{
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#5439d4), to(#795dff));
+	background-image: linear-gradient(to top, #5439d4, #795dff);
+	-webkit-box-shadow: 0 4px 24px 0 rgba(155,182,190,0.06);
+	box-shadow: 0 4px 24px 0 rgba(155,182,190,0.06);
+	padding: 10px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.highcharts-point .highcharts-color-0 .highcharts-point-up{
+
+}
+
+.highcharts-point .highcharts-color-0 .highcharts-point-down {
+
+}
+
+.highcharts-candlestick-series .highcharts-point-down {
+	stroke: #B33C12;
+	fill: #B33C12;
+}
+
+.highcharts-candlestick-series .highcharts-point-up {
+	stroke: #42A084;
+	fill: #42A084;
+}
+
+
+.highcharts-background{
+	fill: #171036;
+}
+
+.highcharts-grid-line{
+	stroke: black;
+	fill: black;
+}
+
+.highcharts-button .highcharts-button-normal rect{
+	fill: #34276c;
+	color: #ffffff;
+	margin: 0;
+	font-size: 12px;
+	padding: 14px 20px;
+}
+
+
+highcharts-title{
+	color: #feffff;
+	font-size: 16px;
+	fill: #feffff;
+}
+
+.highcharts-axis-labels {
+	fill: #666666;
+	cursor: default;
+	font-size: 0.9em;
+}
+
+.highcharts-scrollbar .highcharts-scrollbar-track{
+	fill: rgb(16, 13, 32);
+	stroke: rgb(16, 13, 32);
+}
+
+.highcharts-axis-line{
+	fill: rgb(16, 13, 32);
+	stroke: rgb(16, 13, 32);
+}
+
+.highcharts-tick{
+	fill: rgb(16, 13, 32);
+	stroke: rgb(16, 13, 32);
+}
+
+.highcharts-button-box{
+	fill: #34276c;
+	stroke: rgb(16, 13, 32);
+}
+
+.highcharts-button-box>text{
+	fill: #feffff;
+	stroke: rgb(254, 255, 255);
+}
+/*simple*/
+
