@@ -4,12 +4,17 @@
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 160px 0 100px;
+  /*padding: 160px 0 0;*/
+  padding: 100px 0 0;
   z-index: 0;
   overflow: hidden;
   background: #1d0f48 url(../img/gb.png) 100% 0%;
-  height: 85vh;
+  height: 100vh;
   background-repeat: no-repeat;
+}
+
+.bottom-val hr{
+    margin: 2em auto 0;
 }
 
 
@@ -19,6 +24,32 @@
 
 .two-cloud {
   background: url(../img/purple.png) no-repeat 0% center;
+}
+
+.newsl h2{
+    font-family: "Boing", sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.newsl p{
+    font-size: 23px;
+    
+}
+
+#section-roadmap{
+    background: url(../img/roadmap.png);
+}
+
+
+.btn-banner-newsl{
+    background-color: #231452;
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 10px 30px rgb(20, 11, 49);
+    /* line-height: 48px; */
+    height: 50px;
+    border-radius: 25px;
 }
 
 
@@ -194,6 +225,27 @@
 }
 
 
+.features-post {
+    margin: 20px 15px 10px 0;
+}
+
+.features-post h4{
+    color: #011b33;
+    font-family: "Boing", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0; 
+}
+
+
+.features-post p{
+    
+}
+
+.topbar-brand img {
+    max-height: 35px;
+}
+
 /*.img-banner img {*/
   /*margin-right: -20px;*/
 /*}*/
@@ -201,6 +253,8 @@
 .banner-container img{
 
 }
+
+
 
 
 
@@ -259,17 +313,18 @@
 .timeline li .timeline-panel {
     width: 46%;
     float: left;
-    /*background: #fff;*/
-    background: #1d0f48;
-    border: 1px solid #d4d4d4;
+    color: #fff;
+    /* background: #fff; */
+    /* background: #1d0f48; */
+    /* border: 1px solid #d4d4d4; */
     padding: 20px;
     position: relative;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    /* -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); */
     -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); */
 }
 
 /** panel arrows **/
@@ -355,6 +410,49 @@
     margin-top: -10%;
 }
 
+.timeline-text-right{
+    text-align: right;
+}
+
+#section-roadmap h2{
+    font-family: "Boing", sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.head-note h6{
+    color: rgb(184, 202, 208);
+    font-family: "Boing", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.head-note h2 {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: "Graphik", sans-serif;
+}
+
+
+.bottom-val {
+    position: absolute;
+    bottom: 0;
+   left: 0;
+    padding-left: 80px;
+    width: 100%;
+    border-top: 1px solid rgb(40, 23, 93)
+}
+
+.head-note{
+        margin: 30px;
+}
+
 
 /** timeline content **/
 
@@ -364,6 +462,8 @@
     font-size: 17px;
     /*color: #1d0f49;*/
     color: white;
+    font-family: "Boing", sans-serif;
+    font-size: 25px;
 }
 
 .tl-body p, .tl-body ul {
