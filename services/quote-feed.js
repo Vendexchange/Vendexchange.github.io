@@ -149,8 +149,8 @@ function service(CIQ, $http) {
 
         var order = {};
 
-        order.ask = itemListAsk(10);
-        order.bids = itemList(10);
+        order.ask = itemListAsk(10).sort(function (a, b) {  return a + b;  });
+        order.bids = itemList(10).sort(function (a, b) {  return a + b;  });
 
         return order;
 

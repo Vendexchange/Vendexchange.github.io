@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03f21c7c-d31f-4b37-9d43-41d625dfd490" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/orderbook.js" afterPath="$PROJECT_DIR$/components/orderbook.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/quote-feed.js" afterPath="$PROJECT_DIR$/services/quote-feed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trade.html" afterPath="$PROJECT_DIR$/trade.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/css/main.css" afterPath="$PROJECT_DIR$/www/assets/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +42,11 @@
       <file leaf-file-name="quote-feed.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/quote-feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+            <state relative-caret-position="212">
+              <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding>
                 <element signature="e#5410#5919#0" expanded="false" />
-                <element signature="e#7293#7716#0" expanded="false" />
+                <element signature="e#7377#7800#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -65,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderbook.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="orderbook.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/orderbook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="83" lean-forward="true" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+            <state relative-caret-position="281">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="e#508#535#0" expanded="false" />
                 <element signature="e#925#1275#0" expanded="false" />
@@ -88,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="246" column="47" lean-forward="true" selection-start-line="246" selection-start-column="47" selection-end-line="246" selection-end-column="47" />
+            <state relative-caret-position="99">
+              <caret line="236" column="1" lean-forward="true" selection-start-line="236" selection-start-column="1" selection-end-line="236" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -138,9 +135,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/templates/orderbook.html" />
         <option value="$PROJECT_DIR$/components/orderbook.js" />
-        <option value="$PROJECT_DIR$/services/quote-feed.js" />
         <option value="$PROJECT_DIR$/trade.html" />
         <option value="$PROJECT_DIR$/www/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/services/quote-feed.js" />
       </list>
     </option>
   </component>
@@ -359,12 +356,12 @@
       <workItem from="1512151987640" duration="891000" />
       <workItem from="1512189768151" duration="1041000" />
       <workItem from="1512221074858" duration="738000" />
-      <workItem from="1512234520724" duration="9538000" />
+      <workItem from="1512234520724" duration="9812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32601000" />
+    <option name="totallyTimeSpent" value="32875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1436" height="797" extended-state="6" />
@@ -783,28 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/orderbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="83" lean-forward="true" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
-          <folding>
-            <element signature="e#508#535#0" expanded="false" />
-            <element signature="e#925#1275#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/quote-feed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding>
-            <element signature="e#5410#5919#0" expanded="false" />
-            <element signature="e#7293#7716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trade.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -817,9 +792,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="246" column="47" lean-forward="true" selection-start-line="246" selection-start-column="47" selection-end-line="246" selection-end-column="47" />
+        <state relative-caret-position="99">
+          <caret line="236" column="1" lean-forward="true" selection-start-line="236" selection-start-column="1" selection-end-line="236" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/quote-feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding>
+            <element signature="e#5410#5919#0" expanded="false" />
+            <element signature="e#7377#7800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/orderbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#508#535#0" expanded="false" />
+            <element signature="e#925#1275#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
