@@ -160,12 +160,12 @@ function service(CIQ, $http) {
 
         function itemList(num) {
             var cont = [];
-
             for (var i = 0; i < num; i++) {
                 cont.push({
                     amount: randnumb(10, 30),
                     total: randnumb(0, 20),
                     size: randnumb(20, 3000),
+                    // price: randnumb(0.00000111, 0.00000200).toFixed(8),
                     price: randnumb(0.00000111, 0.00000200).toFixed(8),
                     cost: randnumb(0, 0.04)
                 });

@@ -244,6 +244,13 @@ a[title="JavaScript charts"] {
 	padding: 14px 20px;
 }
 
+.highcharts-button .highcharts-button-pressed > rect{
+	fill: #68B3C8;
+	color: #ffffff;
+	margin: 0;
+	font-size: 12px;
+	padding: 14px 20px;
+}
 
 highcharts-title{
 	color: #feffff;
@@ -274,12 +281,17 @@ highcharts-title{
 
 .highcharts-button-box{
 	fill: #34276c;
-	stroke: rgb(16, 13, 32);
+	/*stroke: rgb(16, 13, 32);*/
 }
 
-.highcharts-button-box>text{
-	fill: #feffff;
-	stroke: rgb(254, 255, 255);
+g>text{
+	/*fill: #feffff;*/
+	stroke: #68B3C8 !important;
+	stroke-width: 0.5px !important;
+	font-weight: lighter !important;
+	color: #68B3C8 !important;
+	fill: #68B3C8 !important;
 }
+
 /*simple*/
 
