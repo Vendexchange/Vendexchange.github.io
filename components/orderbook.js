@@ -11,14 +11,14 @@ DrawingOrderbook.$inject = ['$scope','$rootScope', '$filter','$interval', 'CIQ',
 function DrawingOrderbook($scope, $rootScope, $filter, $interval, CIQ, quoteFeed) {
 
 	// var orderBook =  quoteFeed.makeOrderBook();
+    // let feed = quoteFeed.orderBook();
 
-	//formatNumberfilter
+    //formatNumberfilter
 	$rootScope.formatNumber = function(i) {
 		return i.toFixed(8);
 	};
 
 	$rootScope.btc_price = 7000;
-
 
 	//init value
 	$scope.bids = quoteFeed.makeOrderBook().bids;
@@ -44,7 +44,6 @@ function DrawingOrderbook($scope, $rootScope, $filter, $interval, CIQ, quoteFeed
 		$rootScope.d_bid = quoteFeed.makeOrderBook().bids[0].price;
 
 	}, 4000);
-
 
 	// console.log("Saminu");
 

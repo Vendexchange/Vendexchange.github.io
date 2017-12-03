@@ -16,7 +16,7 @@
 						<th>Bid( BTC )</th>
 						</thead>
 						<tbody>
-						<tr class="animate" ng-repeat="b in bids">
+						<tr class="animate" ng-repeat="b in bids | orderBy:'-price'">
 							<td>{{b.total}}</td>
 							<td>{{b.amount}}</td>
 							<td>{{b.size}}</td>
@@ -59,7 +59,7 @@
 						<th>Sum</th>
 						</thead>
 						<tbody>
-						<tr class="animate" ng-repeat="b in ask">
+						<tr class="animate" ng-repeat="b in ask | orderBy:'+price'">
 							<td>{{b.price}}</td>
 							<td>{{b.amount}}</td>
 							<td>{{b.size}}</td>

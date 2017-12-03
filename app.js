@@ -66,5 +66,3 @@ angular
 	};
 });
 	//controller for random data ask, bids, update etc
-
-;
