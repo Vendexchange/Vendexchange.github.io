@@ -583,3 +583,13 @@
  canvas{
     display: none !important;
 }
+
+.topbar>.container-fluid {
+    width: 80%;
+    padding-left: 0px;
+    padding-left: 0px;
+}
+.topbar>.container-fluid>.topbar-left {
+    margin-left: -10px;
+}
+
