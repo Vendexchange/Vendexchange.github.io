@@ -20,7 +20,7 @@
 							<td>{{b.total}}</td>
 							<td>{{b.amount}}</td>
 							<td>{{b.size}}</td>
-							<td> {{b.price}} </td>
+							<td class="text-success"> <strong> {{b.price}} </strong> </td>
 						</tr>
 						</tbody>
 					</table>
@@ -60,10 +60,10 @@
 						</thead>
 						<tbody>
 						<tr class="animate" ng-repeat="b in ask | orderBy:'+price'">
-							<td>{{b.price}}</td>
+							<td class="text-danger"><strong>{{b.price}}</strong></td>
 							<td>{{b.amount}}</td>
 							<td>{{b.size}}</td>
-							<td>{{b.total}}</td>
+							<td >{{b.total}}</td>
 						</tr>
 						</tbody>
 					</table>
