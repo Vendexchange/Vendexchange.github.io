@@ -684,6 +684,10 @@
             line-height: 30px;
         }
 
+        .vend-head .btn-banner-red{
+            margin-bottom: 10px;
+        }
+
         .vend-head h3 {
             color: #fff;
             font-size: 21px;
@@ -691,7 +695,7 @@
         }
 
         .header {
-            height: 80vh;
+            height: 90vh;
             padding-top: 100px;
         } 
 
