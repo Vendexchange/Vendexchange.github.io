@@ -692,6 +692,7 @@
 
         .header {
             height: 80vh;
+            padding-top: 100px;
         } 
 
         .features-tile{
