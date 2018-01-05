@@ -1,68 +1,133 @@
-// Define our main angular module
-angular
-	.module('cqNgApp', [])
-	// Inject constants to avoid using globals inside the app:
-	// https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y240
-	.constant('$$$', window.$$$)
-	.constant('CIQ', window.CIQ)
-	// Normally you would define filters in their own dedicated files, but for
-	// convenience in our example we've defined them in the main app file.
-	.filter('periodicity', [function(){
-		return function(chartLayout,periodicityOptions){
-			if(chartLayout) {
-				var selected;
-				for(var i=0; i<periodicityOptions.length; i++){
-					if(periodicityOptions[i].interval==chartLayout.interval && periodicityOptions[i].period==chartLayout.periodicity)
-						selected=periodicityOptions[i];
-				}
-				return selected.label;
-			}
-		};
-	}])
-	.filter('chartType', [function(){
-		return function(chartLayout,chartTypeOptions){
-			if(chartLayout) {
-				var selected;
-				for(var i=0; i<chartTypeOptions.length; i++){
-					if(chartTypeOptions[i].type==chartLayout.chartType)
-						selected=chartTypeOptions[i];
-				}
-				return selected.label;
-			}
-		};
-	}])
-	.filter('titlecase', [function() {
-		return function (input) {
-			var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i;
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
 
-			input = input.toLowerCase();
-			return input.replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function(match, index, title) {
-				if (index > 0 && index + match.length !== title.length &&
-					match.search(smallWords) > -1 && title.charAt(index - 2) !== ":" &&
-					(title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') &&
-					title.charAt(index - 1).search(/[^\s-]/) < 0) {
-					return match.toLowerCase();
-				}
-
-				if (match.substr(1).search(/[A-Z]|\../) > -1) {
-					return match;
-				}
-
-				return match.charAt(0).toUpperCase() + match.substr(1);
-			});
-		};
-	}])
-
-	.directive('animateOnChange', function($timeout) {
-	return function(scope, element, attr) {
-		scope.$watch(attr.animateOnChange, function(nv,ov) {
-			if (nv!=ov) {
-				element.addClass('changed');
-				$timeout(function() {
-					element.removeClass('changed');
-				}, 1000); // Could be enhanced to take duration as a parameter
-			}
-		});
-	};
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
 });
-	//controller for random data ask, bids, update etc
+*/
+
+/* Otherwise just put the config content (json): */
+
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+
+);
