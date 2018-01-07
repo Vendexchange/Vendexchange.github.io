@@ -139,4 +139,28 @@
     letter-spacing: 1.7px;
     text-transform: uppercase;
    }
+
+
+       
+   @media screen and (max-width: 640px) {
+
+    .invite-wrapper{
+      /* margin: 0 20px; */
+      top: 20%;
+
+    }
+
+    .invite img {
+      width: 80%;
+
+    }
+
+    .btn-signup{
+      width: 80%;
+    }
+    
+    
+
+
+}
    
