@@ -99,7 +99,7 @@
      color: #f9f3f4;
      position: absolute;
      text-align: center;
-     top: 30%;
+     top: 28%;
      width: 100%;
      line-height: 0.4em;
    
@@ -130,7 +130,7 @@
     background-color: #f2295b;
     border: 1px solid #f2295b;
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
     width: 400px;
     height: 51px;
     line-height: 51px;
@@ -138,6 +138,7 @@
     border-radius: 3px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
+    font-family: montserrat;
    }
 
 
