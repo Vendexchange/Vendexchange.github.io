@@ -256,9 +256,11 @@ canvas {
 /* ---- particles.js container ---- */
 
 .join {
-  background: #1d0f48 url(assets/img/gb.png) 100% 0%;
+  background: #1d0f48 url(assets/img/world_vector.svg);
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .invite {
@@ -267,10 +269,10 @@ canvas {
 
 h2.invite-tagline {
   color: #fff;
-  margin: 35px 0 30px;
-  font-size: 28px;
-  line-height: 35px;
-  font-family: "Avenir Next", arial, sans-serif;
+    margin: 20px 0 21px;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: "Avenir Next", arial, sans-serif;
 }
 
 .btn-signup {
@@ -278,10 +280,10 @@ h2.invite-tagline {
   background-color: #f2295b;
   border: 1px solid #f2295b;
   color: #fff;
-  width: 400px;
+  width: 300px;
   height: 51px;
   line-height: 35px;
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 3px;
   letter-spacing: 1.7px;
   text-transform: uppercase;
@@ -298,9 +300,10 @@ h2.invite-tagline {
 
 p.token {
   text-transform: uppercase;
-    font-size: 30px;
-    margin: 18px 0 10px;
-    font-family: "Avenir Next", arial, sans-serif;
+  font-size: 20px;
+  margin: 30px 0 10px;
+  font-family: "Avenir Next", arial, sans-serif;
+  font-weight: 700;
 }
 
 .reg-modal{
@@ -336,25 +339,35 @@ p.token {
 .modal-form-header{
   text-align: center;
   color: #fff;
-  margin: 10px 0 20px;
-  line-height: 40px;
-  font-size: 33px;
+  margin: 10px 0 15px;
+  line-height: 35px;
+  font-size: 27px;
 }
 
+
+.modal-form-msg {
+  margin-bottom: 20px;
+}
 .modal-form-msg p {
   color: #fff;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .modal-form-wrapper .col-form-label {
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
+}
+
+.modal-form-wrapper i {
+  content: "\f2b6";
+  font-size: 13px;
+  margin-right: 8px;
 }
 
 
 .modal-form-header h3{
-  font-size: 30px
+  font-size: 25px
 
 }
 
@@ -379,8 +392,8 @@ p.token {
 
 .modal-form-wrapper .form-control{
   font-size: 1rem;
-  height: 2.25rem;
-  line-height: 1.428572;
+  height: 25px;
+  line-height: 30px;
   padding: .410714rem 0 .348214rem;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -390,7 +403,7 @@ p.token {
   border-radius: 0;
   border-style: solid;
   border-width: 0 0 2px;
-  /* border: 2px solid #F2295B;  */
+  /* border: 2px solid #F2295B; */
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
@@ -398,7 +411,132 @@ p.token {
   width: 100%;
 }
 
+.modal-form-wrapper .form-control:focus {
+  border-color: #da1b4a;
+  -webkit-box-shadow: inset 0 -2px 0 -1px #da1b4a;
+  box-shadow: inset 0 -2px 0 -1px #da1b4a;
+  outline: 0;
+}
+
+
+.checkbox-custom, .radio-custom {
+  opacity: 0;
+  position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+  position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+  content: '';
+  background: #190d3e;
+  border: 2px solid #cc2047;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  background: #91E2F4;
+  box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.radio-custom + .radio-custom-label:before {
+  border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+  background: #cc1f48;
+  box-shadow: inset 0px 0px 0px 4px #190d3e;
+}
+
+
+/* .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+outline: 1px dashed #ddd;
+} */
+
+
+
+/*==================================================
+=           Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+    
+        
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .modal-lg {
+    max-width: 600px;
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+}
+
 @media screen and (max-width: 640px) {
+
   .invite-wrapper {
     /* margin: 0 20px; */
     top: 20%;
@@ -409,11 +547,22 @@ p.token {
   .btn-signup {
     width: 80%;
   }
+
+
+
 }
 
-@media screen and (min-width: 768px) {
 
-}
-@media screen and (min-width: 992px) {
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+
   
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+
 }
