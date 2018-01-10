@@ -12,7 +12,10 @@
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link href="assets/css/font.css" rel="stylesheet">
+  <link href="assets/css/fontawesome-all.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="style.css">
 
@@ -27,20 +30,109 @@
   <div class="invite-wrapper">
     <div class="invite">
       <div class="">
-          <img src="assets/img/vend-ban.svg">
+        <img src="assets/img/vend-ban-alt.svg">
+        <p class="token">Africa's Token Platform</p>
         <h2 class="invite-tagline">Cryptocurrency exchange & trading made easy in All Africa</h2>
         <div class="spacer"></div>
-        <a href="#" class="btn btn-signup">Claim free vend token </a>
+        <a href="#" class="btn btn-signup" data-toggle="modal" data-target="#exampleModalCenter">Claim free vend token </a>
       </div>
 
     </div>
   </div>
 
 
+  <!-- Modal -->
+<div class="modal animated fadeIn" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content reg-modal">
+          <div className="modal-header">
+              <button type="button" className="close text-primary pull-right" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+          </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm-12">
+
+                <div class="reg-modal-top">
+                  <div class="modal-form-header">
+                    <h3>Lets prepare for
+                      <br/> Launch !</h3>
+                  </div>
+                
+                  <div class="modal-form-msg">
+                    <p>
+                      We are building a trading platform to support indigenous African projects to get their tokens listed and setup for trading.
+                      Also enabling easy access to for traders in Africa and around the world.
+                    </p>
+                
+                  </div>
+                
+                </div>
+                
+                
+                <div class="modal-form-wrapper">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"><i class="fab fa-telegram"></i> Telegram ID:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"><i class="fas fa-envelope-open"></i> Email address :</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"><i class="fas fa-user-circle"></i> Name </label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">How do you plan to use Vendex</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>As a trader</option>
+                        <option>As an Investor</option>
+                        <option>Want to list you own tokens</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Do you want some free VND token airdrop to get you started with the VND platform </label>
+                      <div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
 
   <!-- scripts -->
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 
 
 </body>
