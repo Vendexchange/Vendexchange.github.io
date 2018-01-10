@@ -371,6 +371,11 @@ p.token {
 
 }
 
+.reg-modal .close {
+  color: #cc2047;
+  text-shadow: 0 1px 0 #190d3e;
+}
+
 
 /* element.style {
   background-color: transparent;
