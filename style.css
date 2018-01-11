@@ -469,6 +469,28 @@ p.token {
 }
 
 
+.modal-form-wrapper ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(152, 28, 60, 0.41);
+  font-size: 11px;
+  margin-bottom: 5px;;
+}
+.modal-form-wrapper ::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(152, 28, 60, 0.41);
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.modal-form-wrapper :-ms-input-placeholder { /* IE 10+ */
+  color: rgba(152, 28, 60, 0.41);
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.modal-form-wrapper :-moz-placeholder { /* Firefox 18- */
+  color: rgba(152, 28, 60, 0.41);
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+
 /* .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
 outline: 1px dashed #ddd;
 } */
