@@ -1,16 +1,13 @@
 .header {
-    position: relative;
-    border-bottom: none;
+    background: #1d0f48 url(../img/world_vector-alt.svg);
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
-    /*padding: 160px 0 0;*/
-    padding: 155px 0 0;
-    z-index: 0;
-    overflow: hidden;
-    background: #1d0f48 url(../img/gb.png) 100% 0%;
-    height: 100vh;
     background-repeat: no-repeat;
+    position: relative;
+    border-bottom: none;
+    z-index: 0;
+    overflow: hidden;   
 }
 
 .bottom-val hr {
@@ -65,7 +62,7 @@
     color: white;
     font-size: 20px;
     font-weight: normal;
-    line-height: 25px;
+    line-height: 30px;
     -webkit-font-smoothing: antialiased;
     font-family: "Graphik", sans-serif;
 }
@@ -423,34 +420,47 @@
 }
 
 .head-note h6 {
-    color: rgb(184, 202, 208);
-    font-family: "Boing", sans-serif;
-    font-size: 12px;
-    line-height: 24px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 5px 0;
     text-transform: uppercase;
 }
 
 .head-note h2 {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: 500;
-    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 2px 0;
+    letter-spacing: 1px;
     text-align: left;
-    color: rgb(255, 255, 255);
-    font-family: "Graphik", sans-serif;
+    color: #a7173b6e;
+    /* font-family: "Graphik", sans-serif; */
+    font-family: 'Orgon';
+    text-transform: capitalize;
 }
 
 .bottom-val {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-left: 80px;
+    /* padding-left: 80px; */
     width: 100%;
-    border-top: 1px solid rgb(40, 23, 93)
+    border-top: 1px solid rgb(40, 23, 93);
+}
+
+
+.bottom-val .col {
+    border-right: 1px solid rgb(40, 23, 93);
 }
 
 .head-note {
-    margin: 30px;
+    margin: 25px 10px;
+    color: rgb(255, 255, 255);
+    font-family: "Avenir Next", sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 /** timeline content **/
@@ -683,6 +693,11 @@ h2.invite-tagline{
     
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
+
+        .header {
+            width: 100vw;
+            height: 100vh;
+        }
     
     
     
@@ -731,10 +746,10 @@ h2.invite-tagline{
             line-height: 35px;
         }
 
-        .header {
-            height: 95vh;
+        /* .header {
             padding-top: 100px;
-        } 
+            margin: 25px
+        }  */
 
         .vend-head .btn-banner-red{
             margin-bottom: 15px;
@@ -762,6 +777,7 @@ h2.invite-tagline{
     
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
+
     
     
     }

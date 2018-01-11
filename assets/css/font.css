@@ -16,6 +16,16 @@
 }
 
 @font-face {
+	font-family: 'Orgon';
+	src: url('../fonts/orgon/Orgon-Light.eot');
+	src: url('../fonts/orgon/Orgon-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/orgon/Orgon-Light.woff') format('woff'),
+		url('../fonts/orgon/Orgon-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
   font-family: 'Graphik';
   font-style: normal;
   font-weight: normal;
