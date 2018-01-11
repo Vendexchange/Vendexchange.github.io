@@ -490,6 +490,25 @@ p.token {
   margin-bottom: 7px;
 }
 
+.modal-form-submit{
+  text-align: center;
+  margin-top: 15px; 
+}
+
+.modal-form-submit .btn {
+  background: #cc2047;
+    color: #fff;
+    width: 186px;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .24), 0 0 4px 0 rgba(0, 0, 0, .12);
+}
+
+.reg-modal .modal-body {
+  padding: 0;
+}
+
 
 /* .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
 outline: 1px dashed #ddd;
