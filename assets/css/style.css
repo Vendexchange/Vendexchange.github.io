@@ -251,7 +251,12 @@
 /*}*/
 
 .banner-container img {
-    width: 80%;
+    /* width: 80%; */
+    position: absolute;
+    top: -220px;
+    left: -86px;
+    height: 730px;
+    max-width: none;
 }
 
 /** timeline box structure **/
@@ -697,6 +702,14 @@ h2.invite-tagline{
         .header {
             width: 100vw;
             height: 100vh;
+        }
+    }
+
+
+      /* Large Devices, Wide Screens */
+      @media only screen and (min-width : 1400px) {
+        .head-mar {
+            margin-top: 163px;
         }
     
     
