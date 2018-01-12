@@ -705,6 +705,8 @@ h2.invite-tagline{
         }
     }
 
+   
+
 
       /* Large Devices, Wide Screens */
       @media only screen and (min-width : 1400px) {
@@ -718,6 +720,12 @@ h2.invite-tagline{
     
     
     /*==========  Non-Mobile First Method  ==========*/
+
+    @media only screen and (max-width : 1400px) {
+        .banner-container img {
+            height: 650px;
+        }
+    }
     
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {

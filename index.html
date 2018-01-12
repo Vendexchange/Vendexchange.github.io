@@ -10,10 +10,11 @@
     <title>Cryptocurrency Trading Platform | Vendex Exchange - Buy and Sell Crypto </title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
     <link href="assets/css/font.css" rel="stylesheet">
     <link href="assets/css/fontawesome-all.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/aos.css" />
     <link href="assets/css/thesaas.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -21,24 +22,17 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/icon.png">
 
-    <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
-    <script src="bower_components/typed.js/lib/typed.min.js"></script>
-
+    
     <!-- Hotjar Tracking Code for https://vendexchange.github.io/ -->
     <script>
         (function (h, o, t, j, a, r) {
             h.hj = h.hj || function () {
                 (h.hj.q = h.hj.q || []).push(arguments)
             };
-            h._hjSettings = {hjid: 717759, hjsv: 6};
+            h._hjSettings = {
+                hjid: 717759,
+                hjsv: 6
+            };
             a = o.getElementsByTagName('head')[0];
             r = o.createElement('script');
             r.async = 1;
@@ -51,110 +45,105 @@
 
 <body id="home">
 
-<!-- Topbar -->
-<nav class="topbar topbar-inverse topbar-expand-md topbar-sticky vend-nav">
-    <div class="container-fluid">
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky vend-nav">
+        <div class="container-fluid">
 
-        <div class="topbar-left">
-            <button class="topbar-toggler">&#9776;</button>
-            <a class="topbar-brand" href="index.html">
-                <img class="small" src="assets/img/logo.png">
-            </a>
-        </div>
+            <div class="topbar-left">
+                <button class="topbar-toggler">&#9776;</button>
+                <a class="topbar-brand" href="index.html">
+                    <img class="small" src="assets/img/logo.png">
+                </a>
+            </div>
 
-        <div class="topbar-right">
-            <ul class="topbar-nav nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-scrollto="home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section-about" data-scrollto="section-about">about us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section-roadmap" data-scrollto="section-roadmap">road map</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section-team" data-scrollto="section-team">team</a>
-                </li>
-                <!--<li class="nav-item">-->
+            <div class="topbar-right">
+                <ul class="topbar-nav nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scrollto="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-about" data-scrollto="section-about">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-roadmap" data-scrollto="section-roadmap">road map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-team" data-scrollto="section-team">team</a>
+                    </li>
+                    <!--<li class="nav-item">-->
                     <!--<a class="nav-link" target="_blank" href="//t.me/vendexchange"-->
-                       <!--data-scrollto="section-faq">Telegram</a>-->
-                <!--</li>-->
-                <!--<li class="nav-item">-->
+                    <!--data-scrollto="section-faq">Telegram</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
                     <!--<a class="nav-link" target="_blank" href="" data-scrollto="section-faq">Trading School (Coming-->
-                        <!--soon)</a>-->
-                <!--</li>-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"
-                       data-scrollto="section-faq">Join ICO</a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
-<!-- END Topbar -->
-
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="cognito">
-                <script src="https://services.cognitoforms.com/s/FNYfMawSF0-O6TN8-a89yg"></script>
-                <script>
-                    Cognito.load("forms", {
-                        id: "1"
-                    });
-                </script>
+                    <!--soon)</a>-->
+                    <!--</li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" data-scrollto="section-faq">Join ICO</a>
+                    </li>
+                </ul>
             </div>
+
         </div>
-    </div>
-</div>
+    </nav>
+    <!-- END Topbar -->
 
-<!-- Header -->
-<header class="header vend-head">
-    <div class="container-fluid">
 
-       <div class="row align-items-center justify-content-center text-center text-lg-left head-mar">
-        <!-- <div class="row text-center text-lg-left"> -->
-            <div class="col-12 col-md-5 offset-md-1 head-intro">
-                <!--<a class="btn btn-primary btn-sm ">PRE-SALE ICO</a>-->
-                <!-- <div class="alert alert-secondary" role="alert">
+
+    <!-- Header -->
+    <header class="header vend-head">
+        <div class="container-fluid">
+
+            <div class="row align-items-center justify-content-center text-center text-lg-left head-mar">
+                <!-- <div class="row text-center text-lg-left"> -->
+                <div class="col-12 col-md-5 offset-md-1 head-intro aos-item" data-aos="fade-right" data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <!--<a class="btn btn-primary btn-sm ">PRE-SALE ICO</a>-->
+                    <!-- <div class="alert alert-secondary" role="alert">
                 </div> -->
-                <h1 class="d-none d-sm-block">Cryptocurrency exchange & trading made easy in <br/><span style=" color: #f2295b; " class="elementAnimate"></span></h1>
-                <!--<h1 class="hidden-lg-down"><strong></strong> <br/> Africa's Home of cryptocurrency exchange and trading </h1>-->
+                    <h1 class="d-none d-sm-block">Cryptocurrency exchange & trading made easy in
+                        <br/>
+                        <span style=" color: #f2295b; " class="elementAnimate"></span>
+                    </h1>
+                    <!--<h1 class="hidden-lg-down"><strong></strong> <br/> Africa's Home of cryptocurrency exchange and trading </h1>-->
 
-                <h3 class="d-md-none d-lg-none d-xl-none text">Cryptocurrency exchange and trading made easy in Africa</h3>
-                <!--<br>-->
-                <p class="lead mx-auto">Great Support for Credible Indigenous Projects, <br> Secured Crypto Assets Deposits & High-performance <br> Order Matching Engine
-                </p>
-                <br>
+                    <h3 class="d-md-none d-lg-none d-xl-none text">Cryptocurrency exchange and trading made easy in Africa</h3>
+                    <!--<br>-->
+                    <p class="lead mx-auto">Great Support for Credible Indigenous Projects,
+                        <br> Secured Crypto Assets Deposits & High-performance
+                        <br> Order Matching Engine
+                    </p>
+                    <br>
 
-                <div class="row justify-content-between">
-                    <div class="col-6">
-                            <a class="btn btn-lg btn-banner-red" data-toggle="modal" data-target=".bd-example-modal-lg" href="">Join
-                                    ICO</a>
+                    <div class="row justify-content-between">
+                        <div class="col-6">
+                            <!-- <a class="btn btn-lg btn-banner-red" data-toggle="modal" data-target=".bd-example-modal-lg" href="">Join ICO
+                            </a> -->
 
-                    </div>
-                    <div class="col-6">
+                            <a class="btn btn-lg btn-banner-red" href="join.html" target="_blank">Join ICO
+                                </a>
+
+                        </div>
+                        <div class="col-6">
                             <a target="_blank" class="btn btn-lg btn-banner-gradient" href="/trade.html">View Demo</a>
-                        
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+
+                    <div class="banner-container d-none d-sm-block aos-item" data-aos="fade-left" data-aos-easing="linear"
+                    data-aos-duration="1200">
+                        <img class=" img-fluid img-banner" src="assets/img/macbook.png">
                     </div>
                 </div>
 
             </div>
 
-            <div class="col-12 col-md-6">
 
-                <div class="banner-container d-none d-sm-block">
-                    <img class=" img-fluid img-banner" src="assets/img/macbook.png">
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="bottom-val hidden-sm-down">
+            <div class="bottom-val hidden-sm-down">
                 <div class="row">
                     <div class="col">
                         <div class="head-note" style="margin-left:40px">
@@ -201,197 +190,1098 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+
+
+
         </div>
 
+    </header>
+    <!-- END Header -->
 
 
-
-
-    </div>
-
-</header>
-<!-- END Header -->
-
-
-<!-- Main container -->
-<main class="main-content">
-    <!--
+    <!-- Main container -->
+    <main class="main-content">
+        <!--
 |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
 | Features
 |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
 !-->
-    <section class="section vend-sec one-cloud" id="section-about">
-        <div class="container">
-            <header class="section-header">
-                <h2>What is Vendex and what can i use it for ?</h2>
-                <hr>
-                <p class="text-center">
-                    Vendex is an African based cryptocurrency trading and exchange platform aimed at simplifying
-                    path to listing and trading
-                    credible indigenous African tokens/coins, also facilitate FIAT withdrawal, with our strong financial
-                    partnerships. Vendex is a gateway to present and future blockchain projects in Africa, with numerous
-                    other use cases
-                </p>
-            </header>
+        <section class="section vend-sec one-cloud" id="section-about">
+            <div class="container">
+                <header class="section-header">
+                    <h2>What is Vendex and what can i use it for ?</h2>
+                    <hr>
+                    <p class="text-center">
+                        Vendex is an African based cryptocurrency trading and exchange platform aimed at simplifying path to listing and trading
+                        credible indigenous African tokens/coins, also facilitate FIAT withdrawal, with our strong financial
+                        partnerships. Vendex is a gateway to present and future blockchain projects in Africa, with numerous
+                        other use cases
+                    </p>
+                </header>
 
 
-            <section class="features-list">
+                <section class="features-list">
 
-                <div class="row gap-y">
+                    <div class="row gap-y">
 
-                    <div class="col-12 col-lg-6">
-                        <div class="features-tile">
+                        <div class="col-12 col-lg-6">
+                            <div class="features-tile">
 
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./assets/img/coins.svg" alt="">
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="features-post">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="./assets/img/coins.svg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="features-post">
 
-                                        <h4 class="card-title">Cryptocurrencies Tokens / Assets</h4>
-                                        <p class="card-text">Vendex will support range of cryptocurrency assets with
-                                            priority listings on
-                                            credible and genuine tokens/coins from African based projects.</p>
+                                            <h4 class="card-title">Cryptocurrencies Tokens / Assets</h4>
+                                            <p class="card-text">Vendex will support range of cryptocurrency assets with priority listings on
+                                                credible and genuine tokens/coins from African based projects.</p>
+                                        </div>
                                     </div>
                                 </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-6">
+                            <div class="features-tile">
+
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="./assets/img/understand.svg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="features-post">
+
+                                            <h4 class="card-title">Convenience and Ease of Use</h4>
+                                            <p class="card-text">Vendex has simplified the ease of deposit and withdrawal of cryptocurrency assets
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row gap-y">
+
+                        <div class="col-12 col-lg-6">
+                            <div class="features-tile">
+
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="./assets/img/trade.svg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="features-post">
+
+                                            <h4 class="card-title">Social Trading</h4>
+                                            <p class="card-text">Vendex has implemented a social trading feature to give users the opportunity
+                                                to interact with each other directly, share signal and trade views.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-6">
+                            <div class="features-tile">
+
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="./assets/img/security.svg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="features-post">
+
+                                            <h4 class="card-title">Asset Security</h4>
+                                            <p class="card-text">Most of the cryptocurrency assets will be deposited in an offline wallet and
+                                                stored in a secure vault, while assets stored online will be backed by strong
+                                                security protocols and insurance policy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row gap-y">
+
+                        <div class="col-12 col-lg-6">
+                            <div class="features-tile">
+
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="./assets/img/performance.svg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="features-post">
+
+                                            <h4 class="card-title">High-Performance Order Matching Engine</h4>
+                                            <p class="card-text">Vendex unique and scalable order matching engine is designed to achieve true
+                                                real time trading which can process millions of orders with sub-millisecond
+                                                latency.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-12 col-lg-6">
+                            <div class="features-tile">
+
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="./assets/img/customer.svg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="features-post">
+
+                                            <h4 class="card-title">24/hours Customer Service</h4>
+                                            <p class="card-text">Round the clock customer services will be available to reliably respond to customer
+                                                demands through our various communication channels</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                </section>
+
+
+                </div>
+        </section>
+
+        <section class="section text-center bg-btm-dark newsl" style="background-color: #1d0f48;">
+            <div class="container">
+                <h2 class="mb-20 text-white">Join the Vendex ICO, over 800 ETH and 100 BTC Contributed So Far</h2>
+                <p class="lead text-white ">10% Extra if you deposit 10 ETH / 0.76 BTC or more </p>
+                <hr class="w-50">
+
+                <div class="row">
+                    <div class="col-sm-8 offset-2">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a class="btn btn-lg btn-banner-newsl" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">Join The ICO</a>
                             </div>
 
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
+
+        <section hidden class="section bg-gray" id="section-video">
+            <div class="container">
+                <div class="row align-items-center">
 
                     <div class="col-12 col-lg-6">
-                        <div class="features-tile">
+                        <script type="text/javascript">
+                            baseUrl = "https://widgets.cryptocompare.com/";
+                            var scripts = document.getElementsByTagName("script");
+                            var embedder = scripts[scripts.length - 1];
+                            var cccTheme = {
+                                "General": {
+                                    "headerText": "BTC Converter"
+                                },
+                                "Form": {
+                                    "labelFrom": "",
+                                    "labelTo": ""
+                                }
+                            };
+                            (function () {
+                                var appName = encodeURIComponent(window.location.hostname);
+                                if (appName == "") {
+                                    appName = "local";
+                                }
+                                var s = document.createElement("script");
+                                s.type = "text/javascript";
+                                s.async = true;
+                                var theUrl = baseUrl +
+                                    'serve/v1/coin/converter?fsym=BTC&tsyms=EUR,USD,BTC,GBP,RUB,SGD,CAD,AUD,CHF,PLN,SEK,JPY,CNY,KRW,ZAR';
+                                s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                                embedder.parentNode.appendChild(s);
+                            })();
+                        </script>
+                    </div>
 
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./assets/img/understand.svg" alt="">
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="features-post">
-
-                                        <h4 class="card-title">Convenience and Ease of Use</h4>
-                                        <p class="card-text">Vendex has simplified the ease of deposit and withdrawal of
-                                            cryptocurrency assets
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="col-12 col-lg-6">
+                        <script type="text/javascript">
+                            baseUrl = "https://widgets.cryptocompare.com/";
+                            var scripts = document.getElementsByTagName("script");
+                            var embedder = scripts[scripts.length - 1];
+                            (function () {
+                                var appName = encodeURIComponent(window.location.hostname);
+                                if (appName == "") {
+                                    appName = "local";
+                                }
+                                var s = document.createElement("script");
+                                s.type = "text/javascript";
+                                s.async = true;
+                                var theUrl = baseUrl +
+                                    'serve/v1/coin/feed?fsym=ETH&tsym=BTC&feedType=CoinTelegraph';
+                                s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                                embedder.parentNode.appendChild(s);
+                            })();
+                        </script>
                     </div>
 
                 </div>
+            </div>
+        </section>
+        <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| Partners
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+        <section class="section bg-gray py-40" hidden>
+            <div class="container">
+                <h4 class="text-center">CryptoVerse Calendar</h4>
 
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=700&amp;wkst=1&amp;hl=en_GB&amp;bgcolor=%23ffffff&amp;src=s.salisu%40live.co.uk&amp;color=%231B887A&amp;ctz=Europe%2FLondon"
+                                    style="border-width:0" width="1200" height="700" frameborder="0" scrolling="no"></iframe>
 
-                <div class="row gap-y">
-
-                    <div class="col-12 col-lg-6">
-                        <div class="features-tile">
-
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./assets/img/trade.svg" alt="">
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="features-post">
-
-                                        <h4 class="card-title">Social Trading</h4>
-                                        <p class="card-text">Vendex has implemented a social trading feature to
-                                            give users the opportunity
-                                            to interact with each other directly, share signal and trade views.</p>
-                                    </div>
-                                </div>
+                                <a class="btn btn-lg btn-banner-newsl" href="https://calendar.google.com/calendar/ical/s.salisu%40live.co.uk/public/basic.ics">Subscribe to Calender</a>
                             </div>
 
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
 
-                    <div class="col-12 col-lg-6">
-                        <div class="features-tile">
+        <section class="section two-cloud" id="section-roadmap">
+            <div class="container">
+                <h2 class="text-center">Road Map</h2>
+                <br>
+                <br>
+                <div hidden class="row ">
+                    <div class="co-sm-12">
 
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./assets/img/security.svg" alt="">
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="features-post">
-
-                                        <h4 class="card-title">Asset Security</h4>
-                                        <p class="card-text">Most of the cryptocurrency assets will be deposited in an
-                                            offline wallet and
-                                            stored in a secure vault, while assets stored online will be backed by
-                                            strong
-                                            security protocols and insurance policy.</p>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="map-cont">
+                            <img src="./assets/img/group.svg" alt="">
                         </div>
+                    </div>
+                </div>
+
+                <ul class="timeline">
+                    <li>
+                        <div class="tldate">2017</div>
+                    </li>
+
+                    <li>
+                        <div class="tl-circ finish">
+                            <p>8</p>
+                        </div>
+                        <div class="timeline-panel timeline-text-right">
+                            <div class="tl-heading">
+                                <h4>Development</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="fa fa-calendar-times-o"></i> August 2017
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Start of the vendexechange development </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="tl-circ finish">
+                            <p>9</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="tl-heading">
+                                <h4>Registration</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="fa fa-calendar-times-o"></i> September 2017
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Official registration process of Vendex</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tldate">Oct 2017</div>
+                    </li>
+
+                    <li>
+                        <div class="tl-circ finish">
+                            <p>10</p>
+                        </div>
+                        <div class="timeline-panel timeline-text-right">
+                            <div class="tl-heading">
+                                <h4>Smart Contract</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="fa fa-calendar-times-o"></i> October 2017
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Development of smart contract for token sale</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tldate">2018</div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="tl-circ">
+                            <p>01</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="tl-heading">
+                                <h4>ICO Launch</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i> 15 Jan 2017
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Vendexechange launch ICO Event
+                                    <a href="#">Join ICO</a>.</p>
+
+                                <p>
+                                    <!--<img src="//lorempixel.com/600/300/nightlife/" alt="lorem pixel">-->
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tl-circ">
+                            <p>02</p>
+                        </div>
+                        <div class="timeline-panel timeline-text-right">
+                            <div class="tl-heading">
+                                <h4>Practice Trading Account Launch</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i> 15 Feb 2017
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>A reduced functional practice trading account for users first time crypto trading </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li>-->
+                    <!--<div class="tl-circ">-->
+                    <!--<p>12</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-panel timeline-text-right">-->
+                    <!--<div class="tl-heading">-->
+                    <!--<h4>Campaign</h4>-->
+                    <!--<p>-->
+                    <!--<small class="text-muted">-->
+                    <!--<i class="glyphicon glyphicon-time"></i> 25 December 2017</small>-->
+                    <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="tl-body">-->
+                    <!--<p>End of ICO, resume campaign</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</li>-->
+
+                    <li class="timeline-inverted">
+                        <div class="tl-circ">
+                            <p>03</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="tl-heading">
+                                <h4>Financial Compliance</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i> March 2018
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Government and central bank compliance processing.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tl-circ">
+                            <p>03</p>
+                        </div>
+                        <div class="timeline-panel timeline-text-right">
+                            <div class="tl-heading">
+                                <h4>Partnerships</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i> March 2018
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>announcing various partnership with financial services and integration with Fintech platforms
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="tl-circ">
+                            <p>03</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="tl-heading">
+                                <h4>Initial Listing</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i> March 2018
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Initial token/coin voting and listing process</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tl-circ">
+                            <p>Q2</p>
+                        </div>
+                        <div class="timeline-panel timeline-text-right">
+                            <div class="tl-heading">
+                                <h4>Launch Date</h4>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i> 2nd Quarter 2018
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="tl-body">
+                                <p>Vendex trading platform launch Event
+                                    <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#">Register to Join</a>.
+                                </p>
+                                <p>
+                                    <!--<img src="//lorempixel.com/600/300/business/" alt="lorem pixel">-->
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section hidden class="section bg-gray" id="section-team">
+            <div class="container-fluid">
+                <h2 class="text-center">The Team</h2>
+
+                <h5 class="text-center">
+                    Our people are our greatest asset and biggest differentiator.
+                    <br>They also believe in having a lot of fun along the way.
+                </h5>
+
+                <div class="container">
+
+                    <div class="hr big_size_hr invisible_hr">
+                        <i class="fa fa-"></i>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h6>Leonard Chimezie </h6>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">Business Director</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/leo.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="https://www.linkedin.com/in/chimezie-oguego-25690293/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team-content">
+                                <div class="team-name">
+                                    <a href="#">
+                                        <h6>Saminu Salisu </h6>
+                                    </a>
+                                </div>
+                                <div class="team-role">Developer</div>
+                                <div class="team-description"></div>
+                            </div>
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <!--<img src="https://api.adorable.io/avatars/285/saminu" class=" img-circle img-responsive">-->
+                                        <img src="assets/img/sam.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="https://www.linkedin.com/in/saminu-salisu-b9157a10a/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/saminated/" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a href="https://twitter.com/codeinng" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h6>Mikeal Namdy</h6>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">Designer / Product Director</div>
+                                    <div class="team-description"></div>
+                                </div>
+
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/mike.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h6>larry Eliemenye</h6>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">BlockChain Developer</div>
+                                    <div class="team-description"></div>
+                                </div>
+
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/larry.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <br>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/gozie.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h6>Chigozie Ngini</h6>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">Marketing Manager</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-image -->
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/chubba.jpeg" class="img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="https://www.instagram.com/grincloud/" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h6>Cloud Chuba</h6>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">PR Director</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/onye.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h5>Onyemaechi Okafor</h5>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">Developer</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="assets/img/obi.jpeg" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <a href="#">
+                                            <h5>Obi Okanume</h5>
+                                        </a>
+                                    </div>
+                                    <div class="team-role">Business Director</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                    </div>
+
+                    <div class="hr invisible_hr">
+                        <i class="fa fa-"></i>
+                    </div>
+
+                    <h4 class="text-center" hidden>Advisors</h4>
+
+                    <div class="row" hidden>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <!-- add col-md-offset-1 for 5 members -->
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <h5>Herman Mach</h5>
+                                    </div>
+                                    <div class="team-role">Affiliate Marketer</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <h5>Joyce Wagner</h5>
+                                    </div>
+                                    <div class="team-role">Designer</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <h5>Donald Speth</h5>
+                                    </div>
+                                    <div class="team-role">Account manager</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <h5>Frank McGuire</h5>
+                                    </div>
+                                    <div class="team-role">Programmer</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <h5>Natasha Miley</h5>
+                                    </div>
+                                    <div class="team-role">Journalist</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="team">
+                                <div class="team-image">
+                                    <a href="#">
+                                        <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
+                                    </a>
+                                    <div class="team-links">
+                                        <div class="team-links-list">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-linked"></i>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.team-links-list -->
+                                    </div>
+                                    <!-- /.team-links -->
+                                </div>
+                                <!-- /.team-image -->
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        <h5>Lavona Smith</h5>
+                                    </div>
+                                    <div class="team-role">Photographer</div>
+                                    <div class="team-description"></div>
+                                </div>
+                                <!-- /.team-content -->
+                            </div>
+                            <!-- /.team -->
+                        </div>
+                    </div>
+
+                    <div class="hr big_size_hr invisible_hr">
+                        <i class="fa fa-"></i>
                     </div>
 
                 </div>
+                <!-- /.container -->
+            </div>
+        </section>
+
+    </main>
+    <!-- END Main container -->
 
 
-                <div class="row gap-y">
-
-                    <div class="col-12 col-lg-6">
-                        <div class="features-tile">
-
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./assets/img/performance.svg" alt="">
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="features-post">
-
-                                        <h4 class="card-title">High-Performance Order Matching Engine</h4>
-                                        <p class="card-text">Vendex unique and scalable order matching engine is
-                                            designed to achieve true
-                                            real time trading which can process millions of orders with sub-millisecond
-                                            latency.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-12 col-lg-6">
-                        <div class="features-tile">
-
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./assets/img/customer.svg" alt="">
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="features-post">
-
-                                        <h4 class="card-title">24/hours Customer Service</h4>
-                                        <p class="card-text">Round the clock customer services will be available to
-                                            reliably respond to customer
-                                            demands through our various communication channels</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-            </section>
-
-
-        </div>
-    </section>
-
-    <section class="section text-center bg-btm-dark newsl" style="background-color: #1d0f48;">
+    <section class="section text-center bg-btm-dark">
         <div class="container">
-            <h2 class="mb-20 text-white">Join the Vendex ICO, over 800 ETH and 100 BTC Contributed So Far</h2>
+            <h2 hidden class="mb-20 text-white">Join the Vendex ICO, over 800 ETH and 100 BTC Contributed So Far</h2>
             <p class="lead text-white ">10% Extra if you deposit 10 ETH / 0.76 BTC or more </p>
             <hr class="w-50">
 
@@ -399,8 +1289,7 @@
                 <div class="col-sm-8 offset-2">
                     <div class="row">
                         <div class="col-sm-12">
-                            <a class="btn btn-lg btn-banner-newsl" data-toggle="modal"
-                               data-target=".bd-example-modal-lg" href="#">Join The ICO</a>
+                            <a class="btn btn-lg btn-banner-red" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">Join The ICO</a>
                         </div>
 
                     </div>
@@ -410,983 +1299,109 @@
     </section>
 
 
-    <section hidden class="section bg-gray" id="section-video">
+    <!-- Footer -->
+    <footer class="site-footer vend-footer">
         <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-12 col-lg-6">
-                    <script type="text/javascript">
-                        baseUrl = "https://widgets.cryptocompare.com/";
-                        var scripts = document.getElementsByTagName("script");
-                        var embedder = scripts[scripts.length - 1];
-                        var cccTheme = {
-                            "General": {"headerText": "BTC Converter"},
-                            "Form": {"labelFrom": "", "labelTo": ""}
-                        };
-                        (function () {
-                            var appName = encodeURIComponent(window.location.hostname);
-                            if (appName == "") {
-                                appName = "local";
-                            }
-                            var s = document.createElement("script");
-                            s.type = "text/javascript";
-                            s.async = true;
-                            var theUrl = baseUrl + 'serve/v1/coin/converter?fsym=BTC&tsyms=EUR,USD,BTC,GBP,RUB,SGD,CAD,AUD,CHF,PLN,SEK,JPY,CNY,KRW,ZAR';
-                            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                            embedder.parentNode.appendChild(s);
-                        })();
-                    </script>
+            <div class="row gap-y align-items-center">
+                <div class="col-12 col-lg-3">
+                    <p class="text-center text-lg-left">
+                        <img class="small" src="assets/img/logo.png">
+                    </p>
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <script type="text/javascript">
-                        baseUrl = "https://widgets.cryptocompare.com/";
-                        var scripts = document.getElementsByTagName("script");
-                        var embedder = scripts[scripts.length - 1];
-                        (function () {
-                            var appName = encodeURIComponent(window.location.hostname);
-                            if (appName == "") {
-                                appName = "local";
-                            }
-                            var s = document.createElement("script");
-                            s.type = "text/javascript";
-                            s.async = true;
-                            var theUrl = baseUrl + 'serve/v1/coin/feed?fsym=ETH&tsym=BTC&feedType=CoinTelegraph';
-                            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                            embedder.parentNode.appendChild(s);
-                        })();
+                    <ul class="nav nav-primary nav-hero">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scrollto="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scrollto="section-features">road map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scrollto="section-pricing">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scrollto="section-faq">press release</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="//t.me/vendexchange" data-scrollto="section-faq">Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="social text-center text-lg-right">
+                        <a class="social-facebook" target="_blank" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="social-twitter" target="_blank" href="https://twitter.com/vendexchange">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="social-instagram" target="_blank" href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a class="social-dribbble" target="_blank" href="https://t.me/vendexchange">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+
+
+    <!-- Scripts -->
+    <!-- <script src="assets/js/core.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/thesaas.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    
+    <script src="bower_components/typed.js/lib/typed.min.js"></script>
+
+    <!--live chat-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=49464603"></script>
+
+
+    <script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+
+        const animateOptions = {
+            strings: ["Africa", "Nigeria", "South Africa", "Zimbabwe", "Algeria", "Kenya", "Egypt", "Ghana",
+                "Cameroon", "All Africa"
+            ],
+            typeSpeed: 50
+        };
+
+        const typed = new Typed(".elementAnimate", animateOptions);
+    </script>
+
+
+<!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="cognito">
+                    <script src="https://services.cognitoforms.com/s/FNYfMawSF0-O6TN8-a89yg"></script>
+                    <script>
+                        Cognito.load("forms", {
+                            id: "1"
+                        });
                     </script>
                 </div>
-
             </div>
         </div>
-    </section>
-    <!--
-|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-| Partners
-|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-!-->
-    <section class="section bg-gray py-40" hidden>
-        <div class="container">
-            <h4 class="text-center">CryptoVerse Calendar</h4>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=700&amp;wkst=1&amp;hl=en_GB&amp;bgcolor=%23ffffff&amp;src=s.salisu%40live.co.uk&amp;color=%231B887A&amp;ctz=Europe%2FLondon"
-                                    style="border-width:0" width="1200" height="700" frameborder="0"
-                                    scrolling="no"></iframe>
-
-                            <a class="btn btn-lg btn-banner-newsl"
-                               href="https://calendar.google.com/calendar/ical/s.salisu%40live.co.uk/public/basic.ics">Subscribe
-                                to Calender</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section two-cloud" id="section-roadmap">
-        <div class="container">
-            <h2 class="text-center">Road Map</h2>
-            <br>
-            <br>
-            <div hidden class="row ">
-                <div class="co-sm-12">
-
-                    <div class="map-cont">
-                        <img src="./assets/img/group.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <ul class="timeline">
-                <li>
-                    <div class="tldate">2017</div>
-                </li>
-
-                <li>
-                    <div class="tl-circ finish">
-                        <p>8</p>
-                    </div>
-                    <div class="timeline-panel timeline-text-right">
-                        <div class="tl-heading">
-                            <h4>Development</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="fa fa-calendar-times-o"></i> August 2017
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Start of the vendexechange development </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="tl-circ finish">
-                        <p>9</p>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="tl-heading">
-                            <h4>Registration</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="fa fa-calendar-times-o"></i> September 2017
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Official registration process of Vendex</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="tldate">Oct 2017</div>
-                </li>
-
-                <li>
-                    <div class="tl-circ finish">
-                        <p>10</p>
-                    </div>
-                    <div class="timeline-panel timeline-text-right">
-                        <div class="tl-heading">
-                            <h4>Smart Contract</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="fa fa-calendar-times-o"></i> October 2017
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Development of smart contract for token sale</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="tldate">2018</div>
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="tl-circ">
-                        <p>01</p>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="tl-heading">
-                            <h4>ICO Launch</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="glyphicon glyphicon-time"></i> 15 Jan 2017
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Vendexechange launch ICO Event
-                                <a href="#">Join ICO</a>.</p>
-
-                            <p>
-                                <!--<img src="//lorempixel.com/600/300/nightlife/" alt="lorem pixel">-->
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="tl-circ">
-                        <p>02</p>
-                    </div>
-                    <div class="timeline-panel timeline-text-right">
-                        <div class="tl-heading">
-                            <h4>Practice Trading Account Launch</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="glyphicon glyphicon-time"></i> 15 Feb 2017
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>A reduced functional practice trading account for users first time crypto trading </p>
-                        </div>
-                    </div>
-                </li>
-                <!--<li>-->
-                <!--<div class="tl-circ">-->
-                <!--<p>12</p>-->
-                <!--</div>-->
-                <!--<div class="timeline-panel timeline-text-right">-->
-                <!--<div class="tl-heading">-->
-                <!--<h4>Campaign</h4>-->
-                <!--<p>-->
-                <!--<small class="text-muted">-->
-                <!--<i class="glyphicon glyphicon-time"></i> 25 December 2017</small>-->
-                <!--</p>-->
-                <!--</div>-->
-                <!--<div class="tl-body">-->
-                <!--<p>End of ICO, resume campaign</p>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</li>-->
-
-                <li class="timeline-inverted">
-                    <div class="tl-circ">
-                        <p>03</p>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="tl-heading">
-                            <h4>Financial Compliance</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="glyphicon glyphicon-time"></i> March 2018
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Government and central bank compliance processing.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="tl-circ">
-                        <p>03</p>
-                    </div>
-                    <div class="timeline-panel timeline-text-right">
-                        <div class="tl-heading">
-                            <h4>Partnerships</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="glyphicon glyphicon-time"></i> March 2018
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>announcing various partnership with financial services and integration with Fintech
-                                platforms</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="tl-circ">
-                        <p>03</p>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="tl-heading">
-                            <h4>Initial Listing</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="glyphicon glyphicon-time"></i> March 2018
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Initial token/coin voting and listing process</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="tl-circ">
-                        <p>Q2</p>
-                    </div>
-                    <div class="timeline-panel timeline-text-right">
-                        <div class="tl-heading">
-                            <h4>Launch Date</h4>
-                            <p>
-                                <small class="text-muted">
-                                    <i class="glyphicon glyphicon-time"></i> 2nd Quarter 2018
-                                </small>
-                            </p>
-                        </div>
-                        <div class="tl-body">
-                            <p>Vendex trading platform launch Event
-                                <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#">Register to Join</a>.
-                            </p>
-                            <p>
-                                <!--<img src="//lorempixel.com/600/300/business/" alt="lorem pixel">-->
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </section>
-
-
-    <section hidden class="section bg-gray" id="section-team">
-        <div class="container-fluid">
-            <h2 class="text-center">The Team</h2>
-
-            <h5 class="text-center">
-                Our people are our greatest asset and biggest differentiator.
-                <br>They also believe in having a lot of fun along the way.
-            </h5>
-
-            <div class="container">
-
-                <div class="hr big_size_hr invisible_hr">
-                    <i class="fa fa-"></i>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h6>Leonard Chimezie </h6>
-                                    </a>
-                                </div>
-                                <div class="team-role">Business Director</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/leo.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="https://www.linkedin.com/in/chimezie-oguego-25690293/" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team-content">
-                            <div class="team-name">
-                                <a href="#">
-                                    <h6>Saminu Salisu </h6>
-                                </a>
-                            </div>
-                            <div class="team-role">Developer</div>
-                            <div class="team-description"></div>
-                        </div>
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <!--<img src="https://api.adorable.io/avatars/285/saminu" class=" img-circle img-responsive">-->
-                                    <img src="assets/img/sam.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="https://www.linkedin.com/in/saminu-salisu-b9157a10a/" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/saminated/" target="_blank">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                        <a href="https://twitter.com/codeinng" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h6>Mikeal Namdy</h6>
-                                    </a>
-                                </div>
-                                <div class="team-role">Designer / Product Director</div>
-                                <div class="team-description"></div>
-                            </div>
-
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/mike.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h6>larry Eliemenye</h6>
-                                    </a>
-                                </div>
-                                <div class="team-role">BlockChain Developer</div>
-                                <div class="team-description"></div>
-                            </div>
-
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/larry.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <br>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/gozie.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h6>Chigozie Ngini</h6>
-                                    </a>
-                                </div>
-                                <div class="team-role">Marketing Manager</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-image -->
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/chubba.jpeg" class="img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="https://www.instagram.com/grincloud/" target="_blank">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h6>Cloud Chuba</h6>
-                                    </a>
-                                </div>
-                                <div class="team-role">PR Director</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/onye.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h5>Onyemaechi Okafor</h5>
-                                    </a>
-                                </div>
-                                <div class="team-role">Developer</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="assets/img/obi.jpeg" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <a href="#">
-                                        <h5>Obi Okanume</h5>
-                                    </a>
-                                </div>
-                                <div class="team-role">Business Director</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                </div>
-
-                <div class="hr invisible_hr">
-                    <i class="fa fa-"></i>
-                </div>
-
-                <h4 class="text-center" hidden>Advisors</h4>
-
-                <div class="row" hidden>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <!-- add col-md-offset-1 for 5 members -->
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-envelope"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <h5>Herman Mach</h5>
-                                </div>
-                                <div class="team-role">Affiliate Marketer</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-envelope"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <h5>Joyce Wagner</h5>
-                                </div>
-                                <div class="team-role">Designer</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-envelope"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <h5>Donald Speth</h5>
-                                </div>
-                                <div class="team-role">Account manager</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-envelope"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <h5>Frank McGuire</h5>
-                                </div>
-                                <div class="team-role">Programmer</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-envelope"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <h5>Natasha Miley</h5>
-                                </div>
-                                <div class="team-role">Journalist</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="team">
-                            <div class="team-image">
-                                <a href="#">
-                                    <img src="https://api.adorable.io/avatars/285/" class=" img-circle img-responsive">
-                                </a>
-                                <div class="team-links">
-                                    <div class="team-links-list">
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-envelope"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-linked"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <!-- /.team-links-list -->
-                                </div>
-                                <!-- /.team-links -->
-                            </div>
-                            <!-- /.team-image -->
-                            <div class="team-content">
-                                <div class="team-name">
-                                    <h5>Lavona Smith</h5>
-                                </div>
-                                <div class="team-role">Photographer</div>
-                                <div class="team-description"></div>
-                            </div>
-                            <!-- /.team-content -->
-                        </div>
-                        <!-- /.team -->
-                    </div>
-                </div>
-
-                <div class="hr big_size_hr invisible_hr">
-                    <i class="fa fa-"></i>
-                </div>
-
-            </div>
-            <!-- /.container -->
-        </div>
-    </section>
-
-</main>
-<!-- END Main container -->
-
-
-<section class="section text-center bg-btm-dark">
-    <div class="container">
-        <h2 hidden class="mb-20 text-white">Join the Vendex ICO, over 800 ETH and 100 BTC Contributed So Far</h2>
-        <p class="lead text-white ">10% Extra if you deposit 10 ETH / 0.76 BTC or more </p>
-        <hr class="w-50">
-
-        <div class="row">
-            <div class="col-sm-8 offset-2">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <a class="btn btn-lg btn-banner-red" data-toggle="modal" data-target=".bd-example-modal-lg"
-                           href="#">Join The ICO</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="site-footer vend-footer">
-    <div class="container">
-        <div class="row gap-y align-items-center">
-            <div class="col-12 col-lg-3">
-                <p class="text-center text-lg-left">
-                    <img class="small" src="assets/img/logo.png">
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-6">
-                <ul class="nav nav-primary nav-hero">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scrollto="home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scrollto="section-features">road map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scrollto="section-pricing">team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scrollto="section-faq">press release</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="//t.me/vendexchange"  data-scrollto="section-faq">Telegram</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="social text-center text-lg-right">
-                    <a class="social-facebook" target="_blank" href="#">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="social-twitter" target="_blank" href="https://twitter.com/vendexchange">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a class="social-instagram" target="_blank" href="">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a class="social-dribbble" target="_blank" href="https://t.me/vendexchange">
-                        <i class="fa fa-telegram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- END Footer -->
-
-
-<!-- Scripts -->
-<script src="assets/js/core.min.js"></script>
-<script src="assets/js/thesaas.min.js"></script>
-<script src="assets/js/script.js"></script>
-
-<!--live chat-->
-<script type="text/javascript" async="async" defer="defer" data-cfasync="false"
-        src="https://mylivechat.com/chatinline.aspx?hccid=49464603"></script>
-
-
-<script>
-    const animateOptions = {
-        strings: ["Africa", "Nigeria", "South Africa", "Zimbabwe", "Algeria", "Kenya", "Egypt", "Ghana","Cameroon", "All Africa"],
-        typeSpeed: 50
-    };
-
-    const typed = new Typed(".elementAnimate", animateOptions);
-
-</script>
+    </div> -->
 
 </body>
 
