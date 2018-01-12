@@ -51,7 +51,7 @@
     z-index: 2;
 }
 
-.vend-head h1 {
+.vend-head h1, .vend-head h3 {
     color: white;
     font-family: "Boing", sans-serif;
     font-size: 36px;
@@ -767,7 +767,6 @@ h2.invite-tagline{
        
 
         .vend-head h3 {
-            color: #fff;
             font-size: 24px;
             line-height: 40px;
             text-transform: capitalize;
