@@ -730,6 +730,10 @@ h2.invite-tagline{
             font-size: 29px;
             line-height: 1.5;
         }
+
+        .head-mar {
+            margin-top: 50px;
+        }
     }
     
     /* Large Devices, Wide Screens */
