@@ -755,10 +755,6 @@ h2.invite-tagline{
             display: none;
         }
     
-    
-    
-    
-    
     }
     
     @media screen and (max-width: 640px) {
@@ -788,6 +784,11 @@ h2.invite-tagline{
 
         .features-tile{
             margin: 15px;
+        }
+
+
+        .head-mar {
+            margin-top: 20px;
         }
 
 
