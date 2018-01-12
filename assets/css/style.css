@@ -82,14 +82,13 @@
     background-color: #f2295b;
 }
 
-.btn-banner-red:hover{
+.btn-banner-red:hover, .btn-banner-red:focus{
     background: #c51743;
     color: #fff !important;
 }
 
-.btn-banner-gradient:hover {
+.btn-banner-gradient:hover, .btn-banner-gradient:focus {
     color: #fff !important;
-
 }
 
 
@@ -764,8 +763,9 @@ h2.invite-tagline{
 
         .vend-head h3 {
             color: #fff;
-            font-size: 21px;
-            line-height: 35px;
+            font-size: 24px;
+            line-height: 40px;
+            text-transform: capitalize;
         }
 
         /* .header {
