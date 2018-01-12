@@ -255,7 +255,7 @@
     position: absolute;
     top: -220px;
     left: -86px;
-    height: 730px;
+    height: 400px;
     max-width: none;
 }
 
@@ -425,12 +425,13 @@
 }
 
 .head-note h6 {
-    color: #fff;
+    color: #b8cad0;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
     margin: 5px 0;
     text-transform: uppercase;
+    font-family: 'Orgon';
 }
 
 .head-note h2 {
@@ -439,7 +440,7 @@
     margin: 2px 0;
     letter-spacing: 1px;
     text-align: left;
-    color: #a7173b6e;
+    color: #fff;
     /* font-family: "Graphik", sans-serif; */
     font-family: 'Orgon';
     text-transform: capitalize;
@@ -723,7 +724,7 @@ h2.invite-tagline{
 
     @media only screen and (max-width : 1400px) {
         .banner-container img {
-            height: 650px;
+            height: 400px;
         }
     }
     
