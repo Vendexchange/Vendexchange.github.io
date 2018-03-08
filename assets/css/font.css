@@ -1,10 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Dosis:300,600");
 @font-face {
   font-family: 'Boing';
   font-style: normal;
   font-weight: bold;
   src: url('../fonts/boing/Boing_SemiboldWEB.eot');
   src: url('../fonts/boing/Boing_SemiboldWEB.eot?#iefix') format('embedded-opentype'), url('../fonts/boing/Boing_SemiboldWEB.woff') format('woff'), url('../fonts/boing/Boing_SemiboldWEB.ttf') format('truetype'), url('../fonts/boing/Boing_SemiboldWEB.svg#proxima_nova_rgregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/avenir/avenir-next-regular.eot');
+  src: url('../fonts/avenir/avenir-next-regular.eot') format('embedded-opentype'),
+       url('../fonts/avenir/avenir-next-regular.woff') format('woff'),
+       url('../fonts/avenir/avenir-next-regular.ttf') format('truetype'),
+       url('../fonts/avenir/avenir-next-regular.svg#AvenirNextLTW01RegularRegular') format('svg');
+}
+
+@font-face {
+	font-family: 'Orgon';
+	src: url('../fonts/orgon/Orgon-Light.eot');
+	src: url('../fonts/orgon/Orgon-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/orgon/Orgon-Light.woff') format('woff'),
+		url('../fonts/orgon/Orgon-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
